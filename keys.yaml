@@ -1,0 +1,7 @@
+#keys for group1 and group2
+iv: [This is my newIV]
+
+key: [thisismysecretpassword]
+
+group1: [alice,bob,charlie,eve]
+group2: [foo,bar,baz,qux]

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+service messenger {
+rpc chatter(text) returns (stream text) {}
+rpc read(text) returns (text){}
+rpc login(text) returns (text){}
+rpc lru(text) returns (stream text){}
+}
+
+message text{
+  // Sender
+  string sender = 1;
+  // Recipient
+  string recp = 2;
+  // The message to be sent.
+  string msg = 3;
+}
+
